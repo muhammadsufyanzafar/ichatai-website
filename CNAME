@@ -1,12 +1,1 @@
-ichatai-website.is-an.app
-{
-    "name": "ichatai-website",
-    "description": "An AI Chat application website",
-    "owner": {
-        "username": "muhammadsufyanzafar",
-        "email": "sufyan.pk444@gmail.com"
-    },
-    "record": {
-        "CNAME": "muhammadsufyanzafar.github.io"
-    }
-}
+ichatai-website.js.org
