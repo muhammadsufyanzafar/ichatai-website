@@ -38,7 +38,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2 group">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
-                <img src="/bot_avatar.png" alt="Bot Avatar" className="w-9 h-9" />
+                <img src="https://raw.githubusercontent.com/muhammadsufyanzafar/ichatai-website/refs/heads/gh-pages/bot_avatar.png" alt="Bot Avatar" className="w-9 h-9" />
               </div>
               <span className="font-bold text-xl tracking-tight">iChatAI</span>
             </Link>
