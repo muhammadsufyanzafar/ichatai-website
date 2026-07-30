@@ -1,10 +1,10 @@
-# IchaTai Website
+# iChatAI Website
 
-A modern, polished marketing website for IchaTai, showcasing the platform’s AI capabilities, cloud sync features, prompt library, and trust signals. The site is designed to be fast, responsive, and visually engaging for visitors exploring the product.
+A modern, polished marketing website for iChatAI, showcasing the platform’s AI capabilities, cloud sync features, prompt library, and trust signals. The site is designed to be fast, responsive, and visually engaging for visitors exploring the product.
 
 ## Description
 
-IchaTai Website is a React-based landing page experience built with Vite and TypeScript. It presents a compelling overview of the product through sections such as hero content, feature highlights, AI model support, cloud synchronization, testimonials, FAQs, and strong call-to-action areas.
+iChatAI Website is a React-based landing page experience built with Vite and TypeScript. It presents a compelling overview of the product through sections such as hero content, feature highlights, AI model support, cloud synchronization, testimonials, FAQs, and strong call-to-action areas.
 
 The project is optimized for modern web performance and uses a component-driven UI approach with Tailwind CSS and reusable UI primitives.
 
