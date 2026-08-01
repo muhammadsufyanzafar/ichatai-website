@@ -5,7 +5,8 @@ import { defineConfig } from 'vite';
 
 // Works both locally (no env vars needed) and on Replit (PORT + BASE_PATH provided)
 const port = Number(process.env.PORT) || 5173;
-const basePath = process.env.BASE_PATH || '/ichatai-website/';
+// Default to root base for GitHub Pages custom domains or root deployment.
+const basePath = process.env.BASE_PATH || '/';
 
 export default defineConfig({
   base: basePath,
