@@ -15,11 +15,14 @@ export function Footer() {
               <span className="font-bold text-xl tracking-tight">iChatAI</span>
             </Link>
             <p className="text-muted-foreground max-w-sm mb-6">
-              Your intelligent AI companion, everywhere. Experience powerful conversations and privacy-first sync.
+              Your intelligent AI companion, everywhere. Experience powerful conversations, secure sign-in support, and privacy-first sync.
             </p>
-            <p className="text-sm text-muted-foreground font-medium">
+            <p className="text-sm text-muted-foreground font-medium mb-2">
               Built by Muhammad Sufyan Zafar
             </p>
+            <a href="https://muhammadsufyanzafar.github.io/portfolio/#contact" className="text-sm font-medium text-primary hover:underline">
+              Support contact
+            </a>
           </div>
           
           <div>

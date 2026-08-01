@@ -5,9 +5,8 @@ export default function Terms() {
   return (
     <Layout>
       <div className="pt-32 pb-20 relative">
-        {/* Background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-secondary/10 rounded-[100%] blur-[120px] pointer-events-none" />
-        
+
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -15,12 +14,17 @@ export default function Terms() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Terms of Service</h1>
-            <p className="text-muted-foreground mb-12 text-lg">Last updated: July 2026</p>
+            <p className="text-muted-foreground mb-12 text-lg">Last updated: August 2026</p>
 
             <div className="prose prose-lg dark:prose-invert max-w-none glass-card p-8 md:p-12 rounded-3xl">
               <h2>Acceptance of Terms</h2>
               <p>
                 By downloading and using iChatAI, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not use the application.
+              </p>
+
+              <h2>Google Accounts and OAuth</h2>
+              <p>
+                If you choose to authenticate with Google or use Google Drive-backed cloud sync, you are responsible for the security of your Google account and the permissions you grant to iChatAI. We only use the minimum information needed to provide the requested service.
               </p>
 
               <h2>Appropriate Use</h2>
@@ -57,7 +61,7 @@ export default function Terms() {
 
               <h2>Disclaimer of Warranties</h2>
               <p>
-                iChatAI is provided "as is" without warranty of any kind, either express or implied. We do not guarantee that the app will be error-free or uninterrupted.
+                iChatAI is provided &quot;as is&quot; without warranty of any kind, either express or implied. We do not guarantee that the app will be error-free or uninterrupted.
               </p>
             </div>
           </motion.div>
