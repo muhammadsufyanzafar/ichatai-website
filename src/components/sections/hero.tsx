@@ -14,7 +14,7 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-primary/30 mb-8">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-foreground">Google verification ready • iChatAI</span>
+              <span className="text-sm font-medium text-foreground">iChatAI</span>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
@@ -46,7 +46,7 @@ export function Hero() {
             <div className="mt-8 rounded-3xl border border-border/70 bg-card/70 p-6 shadow-lg backdrop-blur">
               <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
                 <Shield className="w-4 h-4 text-primary" />
-                Verification essentials
+                Details
               </div>
               <div className="mt-4 grid gap-3 sm:grid-cols-2 text-sm text-muted-foreground">
                 <div><span className="font-semibold text-foreground">App name:</span> iChatAI</div>
