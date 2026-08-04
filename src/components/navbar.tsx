@@ -7,8 +7,11 @@ import { Menu, X, Moon, Sun, Bot } from 'lucide-react';
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/#features', label: 'Features' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
   { href: '/privacy', label: 'Privacy' },
   { href: '/terms', label: 'Terms' },
+  { href: '/release-notes', label: 'Release Notes' },
   { href: '/#faq', label: 'FAQ' },
 ];
 
@@ -37,7 +40,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
                 <img src="https://raw.githubusercontent.com/muhammadsufyanzafar/ichatai-website/refs/heads/gh-pages/bot_avatar.png" alt="Bot Avatar" className="w-9 h-9" />
               </div>
               <span className="font-bold text-xl tracking-tight">iChatAI</span>
