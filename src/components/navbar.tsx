@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'wouter';
+import { useState, useEffect, useCallback, type MouseEvent } from 'react';
+import { Link, useLocation } from 'wouter';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Moon, Sun, Bot } from 'lucide-react';
@@ -18,7 +18,19 @@ const NAV_LINKS = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
   const { theme, setTheme } = useTheme();
+
+  const handleSectionClick = useCallback((event: MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    if (location === '/') {
+      event.preventDefault();
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.history.replaceState(null, '', `/#${sectionId}`);
+      }
+    }
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,6 +64,10 @@ export function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
+                onClick={(event) => {
+                  if (link.href === '/#features') handleSectionClick(event as MouseEvent<HTMLAnchorElement>, 'features');
+                  if (link.href === '/#faq') handleSectionClick(event as MouseEvent<HTMLAnchorElement>, 'faq');
+                }}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
@@ -105,7 +121,11 @@ export function Navbar() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={(event) => {
+                    if (link.href === '/#features') handleSectionClick(event as MouseEvent<HTMLAnchorElement>, 'features');
+                    if (link.href === '/#faq') handleSectionClick(event as MouseEvent<HTMLAnchorElement>, 'faq');
+                    setMobileMenuOpen(false);
+                  }}
                   className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted"
                 >
                   {link.label}

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Hero } from '@/components/sections/hero';
 import { TrustedBy } from '@/components/sections/trusted-by';
 import { Features } from '@/components/sections/features';
@@ -12,6 +13,16 @@ import { CTA } from '@/components/sections/cta';
 import { Layout } from '@/components/layout';
 
 export default function Home() {
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (!hash) return;
+    const element = document.getElementById(hash);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+  }, []);
+
   return (
     <Layout>
       <div className="relative overflow-hidden">
